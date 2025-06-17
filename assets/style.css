@@ -11,7 +11,7 @@ body {
 }
 
 .col-3 {
-    width: calc(100% /12 * 3)
+    width: calc(100% / 12 * 4);
 }
 
 
@@ -35,7 +35,7 @@ main {
 
     .row {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         flex-wrap: wrap;
     }
 
