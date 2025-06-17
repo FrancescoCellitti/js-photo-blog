@@ -10,6 +10,11 @@ body {
     background-image: url("../img/cork.png");
 }
 
+.col-3 {
+    width: calc(100% /12 * 3)
+}
+
+
 header {
     background-image: url("../img/wall.png");
     text-align: center;
@@ -19,5 +24,56 @@ header {
     font-size: 30px;
     font-style: italic;
     padding: 10px 0;
+
+}
+
+main {
+    .container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .card {
+
+        margin: 20px 5px;
+        padding: 10px;
+        position: relative;
+        background-color: white;
+        box-shadow: 5px 5px #22212182;
+
+        .foto {
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+        }
+
+
+
+        .pin {
+            img {
+                max-width: 8%;
+                position: absolute;
+                top: 5px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .col-3 {
+         width: 50%;
+    }
 
 }
