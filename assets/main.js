@@ -1,0 +1,18 @@
+const rowEl = document.querySelector(".row")
+fetch("https://lanciweb.github.io/demo/api/pictures/")
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(generalità => {
+            rowEl.innerHTML += `
+            <div class="col-3 col-2 col-1">
+                    <div class="card">
+                        <div class="pin"><img src="./img/pin.svg" alt=""></div>
+                        <div class="foto"><img src="${generalità.url}" alt=""></div>
+                        <h1>${generalità.title}
+                        <p>${generalità.date}</p>
+                    </div>
+                </div>`
+
+
+        });
+    })

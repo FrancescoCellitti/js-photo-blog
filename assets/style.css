@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-family: "Edu TAS Beginner", cursive, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+
 
 
 body {
@@ -18,11 +25,7 @@ body {
 header {
     background-image: url("../img/wall.png");
     text-align: center;
-    font-family: "Edu TAS Beginner", cursive, sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-size: 30px;
-    font-style: italic;
+
     padding: 10px 0;
 
 }
@@ -35,7 +38,6 @@ main {
 
     .row {
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
     }
 
@@ -68,12 +70,27 @@ main {
 
         }
 
+        p {
+            font-family: "Sometype Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+        }
+
     }
 }
 
 @media screen and (max-width: 720px) {
-    .col-3 {
-         width: 50%;
+    .col-2 {
+        width: calc(100% / 12 * 6);
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .col-1 {
+        width: 100%;
     }
 
 }
