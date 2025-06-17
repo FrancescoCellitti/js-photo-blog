@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-image: url("../img/cork.png");
+}
+
+header {
+    background-image: url("../img/wall.png");
+    text-align: center;
+    font-family: "Edu TAS Beginner", cursive, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 30px;
+    font-style: italic;
+    padding: 10px 0;
+
+}
