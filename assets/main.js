@@ -11,7 +11,7 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
                     <div class="card">
                         <div class="pin"><img src="./img/pin.svg" alt=""></div>
                         <div class="foto"><img src="${generalità.url}" alt=""></div>
-                        <h1>${generalità.title}
+                        <h1>${generalità.title}<h1>
                         <p>${generalità.date}</p>
                     </div>
                 </div>`
