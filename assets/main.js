@@ -30,9 +30,13 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
         const cardEl = document.querySelectorAll('.card')
         const overlayEl = document.querySelector('.overlay')
         const chiudiEl = document.querySelector('i')
+        
         cardEl.forEach(card => {
+            const img = card.querySelector('.foto img');
             card.addEventListener('click', () => {
                 overlayEl.classList.remove('d-none');
+                const immagine = `<img src= ${img.src} alt="">`
+                overlayEl.insertAdjacentHTML('beforeend', immagine)
             })
         })
         chiudiEl.addEventListener('click', () => {
