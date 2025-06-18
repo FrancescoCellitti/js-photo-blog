@@ -1,4 +1,7 @@
 const rowEl = document.querySelector(".row")
+const headerEl = document.querySelector('header')
+const containerEl = document.querySelector('.container')
+
 fetch("https://lanciweb.github.io/demo/api/pictures/")
     .then(response => response.json())
     .then(data => {
@@ -30,17 +33,22 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
         const cardEl = document.querySelectorAll('.card')
         const overlayEl = document.querySelector('.overlay')
         const chiudiEl = document.querySelector('i')
-        
+
         cardEl.forEach(card => {
             const img = card.querySelector('.foto img');
             card.addEventListener('click', () => {
                 overlayEl.classList.remove('d-none');
+
                 const immagine = `<img src= ${img.src} alt="">`
                 overlayEl.insertAdjacentHTML('beforeend', immagine)
+                headerEl.classList.add('filter')
+                containerEl.classList.add('filter')
             })
         })
         chiudiEl.addEventListener('click', () => {
             overlayEl.classList.toggle('d-none')
+            headerEl.classList.remove('filter')
+            containerEl.classList.remove('filter')
 
         })
 

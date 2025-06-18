@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.filter {
+    filter: brightness(0.5);
+}
 
 h1 {
     font-family: "Edu TAS Beginner", cursive, sans-serif;
