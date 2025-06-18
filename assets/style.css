@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .filter {
     filter: brightness(0.5);
 }
@@ -88,7 +89,7 @@ main {
 }
 
 .overlay {
- 
+
     img {
         max-width: 100%;
         height: 600px;
@@ -112,15 +113,16 @@ main {
 
     i {
         position: absolute;
-        position:  fixed;
+        position: fixed;
         right: 10px;
         top: 20px;
-        
+
     }
 }
+
 .d-none {
-        display: none;
-    }
+    display: none;
+}
 
 @media screen and (max-width: 720px) {
     .col-2 {
@@ -136,11 +138,14 @@ main {
 
 
 }
-i:hover{
+
+i:hover {
     cursor: pointer;
 
 }
 
 .card:hover {
     cursor: pointer;
+    transform: rotate(10deg) scale(1.05);
+    box-shadow: 10px 10px #22212182;;
 }
